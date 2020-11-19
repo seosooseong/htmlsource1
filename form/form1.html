@@ -15,6 +15,9 @@
           autocapitalize : 자동완성 (on(기본), off)
         -->
       <div>
+        <input />
+      </div>
+      <div>
         <label for="username">이름</label>
         <!--for 와 -->
         <input type="text" id="username" />
@@ -22,7 +25,7 @@
       </div>
       <div>
         <label for="pw">비밀번호</label>
-        <input type="password" name="" id="pw" />
+        <input type="password" name="pw" id="pw" />
       </div>
 
       <!--radio : 여러개의 선택지를 주고 하나만 선택하기-->
@@ -36,12 +39,28 @@
       <div>
         <label for="">취미</label>
         <input type="checkbox" name="hobby" id="" />운동
-        <input type="checkbox" name="hobby" id="" />라이딩
+        <input type="checkbox" name="hobby" id="" checked />라이딩
+        <!-- 기본선택 checked  -->
         <input type="checkbox" name="hobby" id="" />명상
         <input type="checkbox" name="hobby" id="" />마사지
         <input type="checkbox" name="hobby" id="" />그림그리기
       </div>
-      <input type="button" value="보내기" />
+      <div>
+        <textarea name="" id="" cols="30" rows="10"> </textarea>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="bmw">bmw</option>
+          <option value="kia" selected>기아</option>
+          <!--기본선택 selected-->
+          <option value="audi">아우디</option>
+          <option value="hyundai">현대</option>
+        </select>
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="submit" />
+
+      <input type="reset" value="reset" />
     </form>
   </body>
 </html>
